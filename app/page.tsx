@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Layers, BadgeCheck, Package, Award, Shield, ChevronLeft, ChevronRight, Calendar, Building2, Users, Target, Phone, Mail, Sparkles, Clock, Store, User, Factory, TrendingUp, CheckCircle2, Star } from 'lucide-react'
 import HeroCarousel from '@/components/HeroCarousel'
+import StatsCounter from '@/components/StatsCounter'
 import { useState, useEffect, useRef } from 'react'
 
 const brands = [
@@ -199,6 +200,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Animated Stats Counter */}
+      <StatsCounter />
 
       <section className="py-8 sm:py-10 md:py-14 lg:py-18 px-4 sm:px-5 md:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
