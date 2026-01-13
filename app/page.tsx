@@ -660,9 +660,30 @@ function CompanyTimeline() {
 
   const timelineEvents = [
     {
+      year: '1970',
+      title: 'Family Saw Mill Foundation',
+      description: "Roy Thomas's father established a saw mill, laying the foundation for decades of expertise in the wood industry. This early venture provided valuable experience and knowledge that would later shape the family's journey in plywood manufacturing.",
+      icon: Building2,
+      color: 'bg-secondary',
+    },
+    {
+      year: '2003',
+      title: 'Ropos Plywood Founded',
+      description: "Roy Thomas and his family started Ropos Plywood, marking a significant step into the plywood manufacturing industry. This venture built upon the family's saw mill experience and established a strong foundation for future growth.",
+      icon: Factory,
+      color: 'bg-primary',
+    },
+    {
+      year: '2007',
+      title: 'Marian Ply Established',
+      description: "Marian Ply was established, representing another milestone in the family's expanding business portfolio. Building on the success of Ropos Plywood, Marian Ply began its journey in the plywood manufacturing industry.",
+      icon: Factory,
+      color: 'bg-secondary',
+    },
+    {
       year: '2012',
       title: 'New Ownership & Factory Foundation',
-      description: 'Marian Ply was acquired from the previous owner and founded by Roy Thomas. His sheer determination and hardwork paved the way for Marian Ply. The factory was founded in 2012, marking the beginning of our journey under new leadership.',
+      description: 'Marian Ply was acquired from the previous owner and refounded by Roy Thomas. His sheer determination and hardwork paved the way for Marian Ply. The factory was re-established in 2012, marking the beginning of our journey under new leadership.',
       icon: User,
       color: 'bg-primary',
     },
