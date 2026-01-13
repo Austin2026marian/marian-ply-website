@@ -757,41 +757,59 @@ function CompanyTimeline() {
                 } ${isEven ? 'mr-auto' : 'ml-auto'}`}
               >
                 {/* Icon/Logo and Year in Header */}
-                <div className="flex items-start gap-3 sm:gap-4">
-                  {event.logo ? (
-                    <div className="bg-white p-3 sm:p-4 md:p-5 rounded-xl flex-shrink-0 border-3 border-primary/40 shadow-lg hover:shadow-xl transition-all duration-300">
-                      <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28">
+                {event.logo ? (
+                  <div className="flex flex-col items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                    {/* Logo above */}
+                    <div className="bg-white p-3 sm:p-4 md:p-5 rounded-xl border-3 border-primary/40 shadow-lg hover:shadow-xl transition-all duration-300">
+                      <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32">
                         <Image
                           src={event.logo}
                           alt={`${event.title} Logo`}
                           fill
                           className="object-contain"
-                          sizes="(max-width: 640px) 64px, (max-width: 1024px) 96px, 112px"
+                          sizes="(max-width: 640px) 80px, (max-width: 1024px) 112px, 128px"
                           priority={event.year === '2026'}
                         />
                       </div>
                     </div>
-                  ) : (
+                    {/* Year and Title below logo */}
+                    <div className="flex flex-col items-center gap-1 sm:gap-2 md:gap-3 w-full">
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 md:gap-3">
+                        <span className="text-primary font-bold text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl whitespace-nowrap">
+                          {event.year}
+                        </span>
+                        <span className="hidden sm:inline text-text/60 text-xs sm:text-sm">•</span>
+                        <h3 className="text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl font-bold text-text leading-tight text-center sm:text-left">
+                          {event.title}
+                        </h3>
+                      </div>
+                      <p className="text-text/80 text-xs sm:text-sm md:text-base leading-relaxed text-center">
+                        {event.description}
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex items-start gap-3 sm:gap-4">
                     <div className={`${event.color} p-2 sm:p-2.5 md:p-3 rounded-lg flex-shrink-0`}>
                       <Icon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" />
                     </div>
-                  )}
-                  <div className="flex-1 min-w-0">
-                    {/* Year and Title */}
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 md:gap-3 mb-2 sm:mb-3">
-                      <span className="text-primary font-bold text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl whitespace-nowrap">
-                        {event.year}
-                      </span>
-                      <span className="hidden sm:inline text-text/60 text-xs sm:text-sm">•</span>
-                      <h3 className="text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl font-bold text-text leading-tight">
-                        {event.title}
-                      </h3>
+                    <div className="flex-1 min-w-0">
+                      {/* Year and Title */}
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 md:gap-3 mb-2 sm:mb-3">
+                        <span className="text-primary font-bold text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl whitespace-nowrap">
+                          {event.year}
+                        </span>
+                        <span className="hidden sm:inline text-text/60 text-xs sm:text-sm">•</span>
+                        <h3 className="text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl font-bold text-text leading-tight">
+                          {event.title}
+                        </h3>
+                      </div>
+                      <p className="text-text/80 text-xs sm:text-sm md:text-base leading-relaxed">
+                        {event.description}
+                      </p>
                     </div>
-                    <p className="text-text/80 text-xs sm:text-sm md:text-base leading-relaxed">
-                      {event.description}
-                    </p>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           )
