@@ -119,7 +119,7 @@ export default function About() {
               </div>
               <div className="space-y-3">
                 <p className="text-text/90 text-base md:text-lg leading-relaxed">
-                  <strong>Austin Panels</strong> is our exciting new venture and a major investment made in <strong>2026</strong>. Building on the success and expertise of Marian Ply, Austin Panels represents another big step in expanding our business portfolio and furthering our commitment to quality, innovation, and excellence in the plywood manufacturing industry.
+                  <strong>Austin Panels</strong> is our exciting new venture and a major investment made in <strong>2024</strong>. Building on the success and expertise of Marian Ply, Austin Panels represents another big step in expanding our business portfolio and furthering our commitment to quality, innovation, and excellence in the plywood manufacturing industry. Production is set to start in 2026.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
                   <div className="flex items-start gap-2">

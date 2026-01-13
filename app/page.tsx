@@ -709,9 +709,9 @@ function CompanyTimeline() {
       color: 'bg-primary',
     },
     {
-      year: '2026',
+      year: '2024',
       title: 'Austin Panels Investment',
-      description: 'Made another big investment with Austin Panels company, expanding our business portfolio and furthering our commitment to excellence in the plywood industry.',
+      description: 'Made another big investment with Austin Panels company in 2024, expanding our business portfolio and furthering our commitment to excellence in the plywood industry. Production is set to start in 2026.',
       icon: Building2,
       color: 'bg-secondary',
       logo: '/austin-panels-logo.png',
@@ -768,7 +768,7 @@ function CompanyTimeline() {
                           fill
                           className="object-contain"
                           sizes="(max-width: 640px) 80px, (max-width: 1024px) 112px, 128px"
-                          priority={event.year === '2026'}
+                          priority={event.year === '2024'}
                         />
                       </div>
                     </div>

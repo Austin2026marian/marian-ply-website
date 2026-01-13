@@ -19,7 +19,7 @@ const stats: Stat[] = [
   },
   {
     label: 'Products Sold',
-    value: 10000,
+    value: 1000000,
     suffix: '+',
     icon: Package,
   },
