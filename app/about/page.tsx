@@ -63,10 +63,10 @@ export default function About() {
                 </h2>
               </div>
               <p className="text-text/90 text-base md:text-lg leading-relaxed mb-4">
-                Our journey began in <strong>1970</strong> when <strong>Roy Thomas's father</strong> established a saw mill, laying the foundation for decades of expertise in the wood industry. This early venture provided valuable experience and knowledge that would shape the family's future in plywood manufacturing.
+                Our journey began in <strong>1970</strong> when <strong>our great father Thomas Ovungamalil</strong> established a saw mill, laying the foundation for decades of expertise in the wood industry. This early venture provided valuable experience and knowledge that would shape the familys future in plywood manufacturing.
               </p>
               <p className="text-text/90 text-base md:text-lg leading-relaxed mb-4">
-                Building on this legacy, <strong>Roy Thomas and his family started Ropos Plywood in 2003</strong>, marking a significant step into the plywood manufacturing industry. In <strong>2007</strong>, <strong>Marian Ply was established</strong>, representing another milestone in the family's expanding business portfolio.
+                Building on this legacy, <strong>Roy Thomas and his family started Ropos Plywood in 2003</strong>, marking a significant step into the plywood manufacturing industry. In <strong>2007</strong>, <strong>Marian Ply was established</strong>, representing another milestone in the familys expanding business portfolio.
               </p>
               <p className="text-text/90 text-base md:text-lg leading-relaxed mb-4">
                 In <strong>2012</strong>, Marian Ply was acquired from the previous owner and refounded by <strong>Roy Thomas</strong>. His sheer determination and hardwork paved the way for Marian Ply. The factory was re-established in 2012, marking the beginning of our journey under new leadership.
@@ -255,7 +255,7 @@ export default function About() {
                 Managing Director & Founder
               </p>
               <p className="text-text/70 text-sm md:text-base italic">
-                Leading with vision and dedication to deliver premium quality plywood products. Founded Marian Ply in 2012 with sheer determination and hardwork, paving the way for the company's success and growth.
+                Leading with vision and dedication to deliver premium quality plywood products. Founded Marian Ply in 2012 with sheer determination and hardwork, paving the way for the companys success and growth.
               </p>
             </div>
 

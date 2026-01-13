@@ -662,7 +662,7 @@ function CompanyTimeline() {
     {
       year: '1970',
       title: 'Family Saw Mill Foundation',
-      description: "Roy Thomas's father established a saw mill, laying the foundation for decades of expertise in the wood industry. This early venture provided valuable experience and knowledge that would later shape the family's journey in plywood manufacturing.",
+      description: "Our great father Thomas Ovungamalil established a saw mill, laying the foundation for decades of expertise in the wood industry. This early venture provided valuable experience and knowledge that would later shape the family's journey in plywood manufacturing.",
       icon: Building2,
       color: 'bg-secondary',
     },
