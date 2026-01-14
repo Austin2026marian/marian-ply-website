@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { Waves, Building2, Hammer, Package, Store, Ruler, Layers, CheckCircle2, Shield, Award } from 'lucide-react'
+import { Waves, Building2, Hammer, Package, Store, Ruler, Layers, CheckCircle2, Shield, Award, MessageSquare } from 'lucide-react'
 
 const products = [
   {
@@ -67,6 +67,31 @@ const products = [
       'Weather Resistant'
     ],
     applications: 'Concrete formwork, construction projects, columns, beams, slabs, foundation work, and structural applications.',
+  },
+  {
+    id: 6,
+    name: 'High Density Shuttering Plywood',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop',
+    description: 'Premium high-density shuttering plywood with exceptional strength and durability. Designed to withstand 2000 ton pressure with superior bonding strength, making it ideal for heavy-duty construction projects and demanding formwork applications.',
+    icon: Hammer,
+    specifications: {
+      thickness: '12mm - 25mm',
+      weight: '35kg - 65kg',
+      grade: 'Commercial Grade',
+      size: 'Standard: 8x4 feet',
+      pressure: '2000 Ton Pressure',
+      bondingStrength: 'Superior Bonding Strength',
+    },
+    features: [
+      '2000 Ton Pressure Resistance',
+      'Superior Bonding Strength',
+      'High Density Construction',
+      'Exceptional Strength',
+      'Reusable Multiple Times',
+      'Heavy-Duty Application',
+      'Superior Load Bearing'
+    ],
+    applications: 'Heavy-duty concrete formwork, high-rise construction, bridges, dams, large-scale infrastructure projects, columns, beams, and structural applications requiring maximum strength and bonding.',
   },
   {
     id: 4,
@@ -279,9 +304,34 @@ export default function Products() {
                             <span className="text-text font-semibold text-xs sm:text-sm">{product.specifications.finish}</span>
                           </div>
                         )}
+                        {product.specifications.pressure && (
+                          <div className="flex justify-between items-center">
+                            <span className="text-text/70 text-xs sm:text-sm font-medium">Pressure:</span>
+                            <span className="text-text font-semibold text-xs sm:text-sm">{product.specifications.pressure}</span>
+                          </div>
+                        )}
+                        {product.specifications.bondingStrength && (
+                          <div className="flex justify-between items-center">
+                            <span className="text-text/70 text-xs sm:text-sm font-medium">Bonding Strength:</span>
+                            <span className="text-text font-semibold text-xs sm:text-sm">{product.specifications.bondingStrength}</span>
+                          </div>
+                        )}
                       </div>
                     </div>
                   )}
+
+                  {/* Request Quote Button */}
+                  <div className="mt-4 pt-4 border-t border-gray-200">
+                    <a
+                      href="https://wa.me/919544339555"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full inline-flex items-center justify-center gap-2 bg-primary hover:bg-[#7A3A10] text-white font-semibold px-4 py-2.5 sm:px-5 sm:py-3 rounded-lg transition-all duration-200 text-sm sm:text-base shadow-md hover:shadow-lg transform hover:scale-105"
+                    >
+                      <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <span>Request a Quote</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             )
