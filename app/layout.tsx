@@ -113,12 +113,8 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Marian Ply',
-    url: 'https://www.marianply.com',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: 'https://www.marianply.com/search?q={search_term_string}',
-      'query-input': 'required name=search_term_string',
-    },
+    alternateName: 'Marian Ply Plywood',
+    url: 'https://www.marianply.com/',
   }
 
   return (
