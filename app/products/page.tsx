@@ -70,8 +70,8 @@ const products = [
   },
   {
     id: 6,
-    name: 'High Density Shuttering Plywood',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop',
+    name: 'High Densified Shuttering Plywood',
+    image: '/high densified shuttering.jpg',
     description: 'Premium high-density shuttering plywood with exceptional strength and durability. Designed to withstand 2000 ton pressure with superior bonding strength, making it ideal for heavy-duty construction projects and demanding formwork applications.',
     icon: Hammer,
     specifications: {
